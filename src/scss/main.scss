@@ -1,0 +1,65 @@
+@import "_normalize";
+@import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+@keyframes bitHeart {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background: rgb(251,77,61); background: linear-gradient(0deg, rgba(251,77,61,1) 50%, rgba(9,161,41,1) 50%);
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+}
+
+.box{
+  font-size: 64px;
+  margin: 0x;
+  padding: 24px;
+  border: none;
+  outline:none;
+  &__true{
+    background: rgba(9,161,41,1);
+    color: white;
+  }
+  &__false{
+    background: rgba(251,77,61,1);
+    color: black;
+  }
+  &:hover{
+    animation: bitHeart 4s ease-in-out 2 forwards;
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (max-device-width: 640px){
+  body {
+    height: 100vh;
+  }
+  .box{
+    font-size: 48 px;
+  }
+  }
