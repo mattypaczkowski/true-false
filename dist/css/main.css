@@ -360,6 +360,9 @@ body {
     background: #9EC480; }
   .box__false {
     background: indianred; }
+  .box:active {
+    -webkit-animation: bitHeart 4s ease-in-out 2 forwards;
+            animation: bitHeart 4s ease-in-out 2 forwards; }
   .box:hover {
     -webkit-animation: bitHeart 4s ease-in-out 2 forwards;
             animation: bitHeart 4s ease-in-out 2 forwards; }
